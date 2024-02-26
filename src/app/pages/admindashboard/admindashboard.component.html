@@ -1,0 +1,38 @@
+
+<header>
+    <h1>Admin Dashboard</h1>
+    <!-- Add navigation links if necessary -->
+    <nav>
+        <ul>
+            <li><a href="admindashboard">Home</a></li>
+            <li><a routerLink="add-training">Add Trainings</a></li>
+            <li><a routerLink="training-list">All Trainings</a></li>
+            <li><a routerLink="add-project">Add Projects</a></li>
+            <li><a routerLink="project-list">All Projects</a></li>
+            <li><a routerLink="all-users">Users</a></li>
+
+           
+            <li style=" cursor:pointer" (click)="logoutAdmin()">   Logout</li>
+
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="profile">
+
+        <div class="admin-dashboard container  mx-auto ">
+           
+            <router-outlet >
+ 
+            </router-outlet> 
+        </div>
+
+    </section>
+
+   
+
+
+</main>
+
+ 

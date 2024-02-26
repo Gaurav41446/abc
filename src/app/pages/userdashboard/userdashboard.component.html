@@ -1,0 +1,41 @@
+<header>
+    <h1>User Dashboard</h1>
+    <!-- Add navigation links if necessary -->
+    <nav>
+        <ul>
+          
+
+
+            <li><a routerLink="assignTraining">Available Trainings</a></li>
+            <!-- <li ><a href="#">Add Projects</a></li> -->
+            <li class="profile-logout"><a routerLink="user-profile"><img src="/assets/images/p.png" alt="Profile Image"></a></li>
+            <li class="profile-logout"><a href="#">Logout</a></li>
+
+        </ul>
+    </nav>
+</header>
+<router-outlet></router-outlet>
+
+<main>
+    <section class="profile">
+
+        <div class="user-dashboard">
+            <h2>Welcome to User Dashboard</h2>
+            <div class="user-info">
+                <p>Email: {{ userData?.email }}</p>
+                <p>Role: {{ userData?.role }}</p>
+                <p>Username:{{userData?.userName}}</p>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+</main> 
+<footer>
+    <!-- Add footer content here -->
+    <p>&copy; 2024 Training Portal. All rights reserved.</p>
+</footer>
